@@ -1,0 +1,19 @@
+.list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    margin-right: 45px;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
