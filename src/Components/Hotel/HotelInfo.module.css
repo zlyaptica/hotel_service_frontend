@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+
+.hotel {
+
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 50px;
+}
+
+.info {
+    margin-bottom: 40px;
+}
+
+.name {
+
+}
+
+.location {
+
+}
+
+.spoiler {
+    margin-left: 10px;
+}
+
+.hotelImg {
+    margin-bottom: 20px;
+}
+
+.hotelDescription {
+    margin-bottom: 40px;
+}
+
+.hotelImgPic {
+    align-items: center;
+    width: 600px;
+    height: 400px;
+}
+
+.apartments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.apartmentReg {
+    border: 4px double black;
+    padding: 20px;
+    background: rgb(154, 154, 255);
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.registration {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(113, 113, 219);
+
+}
+
+.apartmentsHeader {
+    margin-bottom: 50px;
+}

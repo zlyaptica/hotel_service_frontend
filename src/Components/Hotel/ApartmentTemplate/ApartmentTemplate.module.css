@@ -1,0 +1,24 @@
+.apartmentTemplate {
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.reservation {
+    border: none;
+}
+
+.apartmentName {
+    margin-bottom: 10px;
+}
+
+.apartmentBedCount {
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-bottom: 10px;
+}

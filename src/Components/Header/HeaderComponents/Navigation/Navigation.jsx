@@ -10,7 +10,10 @@ const Navigation = () => {
                     <NavLink to="/administration/create" className={classes.link}>Администрирование</NavLink>
                 </li>
                 <li className={classes.item}>
-                    <NavLink to="/profile" className={classes.link}>Профиль</NavLink>
+                    <NavLink to="/transacts" className={classes.link}>Транзакции</NavLink>
+                </li>
+                <li className={classes.item}>
+                    <NavLink to="/create" className={classes.link}>Создать пользователя</NavLink>
                 </li>
             </ul>
         </nav>

@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import * as axios from "axios";
+import { hotelsAPI } from "../Components/common/api/api";
 
 let initialState = {
     hotels: []
@@ -17,8 +17,9 @@ const hotelSlice = createSlice({
 
 export const getHotelsFromServer = () => async (dispatch) => {
     try {
-        const response = await axios.get(`http://localhost:8080/hotels`)
-        dispatch(addHotels(response.data.items))
+        await hotelsAPI.getHotels().then(data => {
+            dispatch(addHotels(data.hotels))
+        })        
     } catch (err) {
         throw new Error(err)
     }
