@@ -1,4 +1,3 @@
-import * as axios from "axios";
 import { usersAPI } from "../Components/common/api/api";
 
 export const registration = ({phone_number, l_name, f_name}) => async () => {
@@ -6,7 +5,15 @@ export const registration = ({phone_number, l_name, f_name}) => async () => {
         await usersAPI.createUser({phone_number, l_name, f_name}).then(() => {
             alert("Пользователь создан!")
         })
-    } catch (e) {
-        throw new Error(e)
+    } catch (err) {
+        throw new Error(err)
+    }
+}
+
+export const deleteUser = ({phone_number}) => async () => {
+    try {
+        await usersAPI.deleteUser({phone_number})
+    } catch (err) {
+        throw new Error(err)
     }
 }

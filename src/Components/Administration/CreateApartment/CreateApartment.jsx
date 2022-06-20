@@ -11,10 +11,8 @@ const CreateApartment = () => {
         dispatch(createApartment({name, bed_count, price, apartment_class_id, hotel_id}))
     }
     return (
-        <div>
-            <div className={classes.wrapper}>
-                <CreateApartmentReduxForm onSubmit={onSubmit}/>
-            </div>
+        <div className={classes.wrapper}>
+            <CreateApartmentReduxForm onSubmit={onSubmit}/>
         </div>
     )
 }

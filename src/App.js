@@ -9,8 +9,12 @@ import {Header} from "./Components/Header/Header";
 import {getHotelsFromServer} from "./redux/hotelSlice";
 import {useDispatch} from "react-redux";
 import {useEffect} from "react";
-import {CreateUser} from "./Components/Login/CreateUser/CreateUser";
 import { HotelList } from './Components/HotelList/HotelList';
+import {PageNoFound} from "./Components/common/PageNoFound/PageNoFound";
+import {Administration} from "./Components/Administration/Administration";
+import {CreateHotel} from "./Components/Administration/CreateHotel/CreateHotel";
+import {EditHotel} from "./Components/HotelList/EditHotel/EditHotel";
+import {User} from "./Components/User/User";
 
 function App() {
     const dispatch = useDispatch()
@@ -24,10 +28,14 @@ function App() {
                 <Route path='/' element={<HotelList/>}/>
                 <Route path='/transacts' element={<TransactPage/>}/>
                 <Route path='/signin' element={<SignIn/>}/>
-                <Route path='/create' element={<CreateUser/>}/>
+                <Route path='/user' element={<User/>}/>
                 <Route path='/signup' element={<SignUp/>}/>
-                <Route path='/administration/create' element={<CreateApartment/>}/>
                 <Route path='/hotel/:hotel_id' element={<Hotel/>}/>
+                <Route path='/hotel/:hotel_id/edit' element={<EditHotel/>}/>
+                <Route path='/administration' element={<Administration/>}/>
+                <Route path='/administration/create_apartment' element={<CreateApartment/>}/>
+                <Route path='/administration/create_hotel' element={<CreateHotel/>}/>
+                <Route path='*' element={<PageNoFound/>}/>
             </Routes>
         </BrowserRouter>
     )

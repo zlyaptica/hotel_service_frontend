@@ -1,0 +1,24 @@
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.headerDelete {
+    margin-bottom: 30px;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+.deleteButton {
+    border: none;
+    background-color: #a9a9a9;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.deleteForm {
+    display: flex;
+    flex-direction: column;
+}

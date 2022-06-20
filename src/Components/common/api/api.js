@@ -1,4 +1,5 @@
 import * as axios from 'axios'
+import {updateHotel} from "../../../redux/hotelSlice";
 
 const instance = axios.create({
     baseURL: `http://localhost:8080/`,
@@ -41,6 +42,30 @@ export const hotelsAPI = {
         return instance.get(`hotels`).then(response => {
             return response.data
         })
+    },
+    createHotel({name, stars_count, description, country, city, street, house, header_image_address}) {
+        return instance.post(`hotels`, {
+            name,
+            stars_count,
+            description,
+            country,
+            city,
+            street,
+            house,
+            header_image_address
+        })
+    },
+    updateHotel({id, name, stars_count, description, country, city, street, house, header_image_address}) {
+        return instance.put(`hotels/${id}`, {
+            name,
+            stars_count,
+            description,
+            country,
+            city,
+            street,
+            house,
+            header_image_address
+        })
     }
 }
 
@@ -51,5 +76,8 @@ export const usersAPI = {
             l_name, 
             f_name
         })
+    },
+    deleteUser({phone_number}) {
+        return instance.delete(`users/${phone_number}`)
     }
 }

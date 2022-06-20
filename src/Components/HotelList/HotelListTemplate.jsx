@@ -9,6 +9,7 @@ const HotelListTemplate = (props) => {
                <div className={classes.item}>
                    <div className={classes.photo}>
                        <img src={process.env.PUBLIC_URL + props.headerImageAddress} className={classes.photo} alt="hotelphoto"/>
+                       <NavLink to={'/hotel/' + props.id + '/edit'}>Изменить</NavLink>
                    </div>
                    <div className={classes.info}>
                        <div className={classes.header}>

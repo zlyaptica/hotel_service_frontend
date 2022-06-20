@@ -1,0 +1,19 @@
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.headerCreate {
+    margin-bottom: 30px;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+.createButton {
+    border: none;
+    background-color: #a9a9a9;
+    cursor: pointer;
+    padding: 10px;
+}
