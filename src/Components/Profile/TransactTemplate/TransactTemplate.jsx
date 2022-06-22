@@ -1,4 +1,4 @@
-import classes from './TransactTemplate.classes.css'
+import classes from './TransactTemplate.module.css'
 
 const TransactTemplate = (props) => {
     return (

@@ -1,7 +1,7 @@
 import {Field} from "redux-form";
 import classes from './RegistrationForm.module.css'
 import {Input} from "../../common/FormsControls/FormsControls";
-import {required, validDate} from "../../common/validators/validators"
+import {required} from "../../common/validators/validators"
 
 const RegistrationForm = (props) => {
     return (

@@ -8,7 +8,7 @@ import {getApartmentsByHotelID, showApartmentImages, showApartments} from "../..
 import {ApartmentTemplate} from "./ApartmentTemplate/ApartmentTemplate";
 import {Image} from "./Image/Image";
 
-const Hotel = (props) => {
+const Hotel = () => {
     const images = useSelector(showApartmentImages)
     const hotels = useSelector(showHotels)
     const dispatch = useDispatch()

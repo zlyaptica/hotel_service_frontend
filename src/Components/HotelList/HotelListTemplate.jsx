@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './HotelListTemplate.module.css'
 import {NavLink} from "react-router-dom";
+import {Image} from "../Hotel/Image/Image";
 
 const HotelListTemplate = (props) => {
     return (

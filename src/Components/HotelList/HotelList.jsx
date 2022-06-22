@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./HotelList.module.css"
-import {HotelListTemplate} from "../HotelList/HotelListTemplate";
+import {HotelListTemplate} from "./HotelListTemplate";
 import {useSelector} from "react-redux";
 import {showHotels} from "../../redux/hotelSlice";
 

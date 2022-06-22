@@ -1,5 +1,4 @@
 import * as axios from 'axios'
-import {updateHotel} from "../../../redux/hotelSlice";
 
 const instance = axios.create({
     baseURL: `http://localhost:8080/`,

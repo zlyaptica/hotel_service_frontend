@@ -1,7 +1,5 @@
 import classes from "./EditHotel.module.css";
 // import {Field} from "redux-form";
-import {Input, Textarea} from "../../common/FormsControls/FormsControls";
-import {required} from "../../common/validators/validators";
 import React from "react";
 import { Form, Field } from 'react-final-form'
 
